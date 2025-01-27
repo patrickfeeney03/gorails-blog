@@ -20,8 +20,9 @@ servers:
 proxy:
   ssl: true
   host: goblog.arraylist.me
+  app_port: 3000
   # Proxy connects to your container on port 80 by default.
-  # app_port: 3000
+
 
 # Credentials for your image host.
 registry:
