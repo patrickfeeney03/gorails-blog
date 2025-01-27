@@ -1,9 +1,12 @@
 class BlogPostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_blog_post, only: [ :show, :edit, :update, :destroy]
+  before_action :set_blog_post, only: [:show, :edit, :update, :destroy]
 
   def index
     @blog_posts = user_signed_in? ? BlogPost.sorted : BlogPost.published.sorted
+    @pagy, @blog_posts = pagy(@blog_posts)
+  rescue Pagy::OverflowError
+    redirect_to root_path(page: 1)
   end
 
   def show
@@ -41,7 +44,7 @@ class BlogPostsController < ApplicationController
   private
 
   def blog_post_params
-    params.require(:blog_post).permit(:title, :body, :published_at)
+    params.require(:blog_post).permit(:title, :content, :published_at, :cover_image)
   end
 
   def set_blog_post
