@@ -13,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "patrickfeeney03"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/patrickfeeney03/gorails-blog.git",
+    "accountId": "fd6cfbe2-c95a-48e7-ac11-5b6df7d0c51f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -119,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737842055792</updated>
       <workItem from="1737842057109" duration="1941000" />
-      <workItem from="1737889387911" duration="1999000" />
+      <workItem from="1737889387911" duration="3819000" />
     </task>
     <servers />
   </component>
